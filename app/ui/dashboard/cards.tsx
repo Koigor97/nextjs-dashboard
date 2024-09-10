@@ -1,8 +1,4 @@
-import {
-  fetchCardData,
-  fetchRevenue,
-  fetchLatestInvoices,
-} from "@/app/lib/data";
+import { fetchCardData } from "@/app/lib/data";
 
 const {
   numberOfCustomers,
