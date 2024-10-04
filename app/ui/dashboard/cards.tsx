@@ -19,11 +19,11 @@ export default async function CardWrapper() {
     totalPaidInvoices,
     totalPendingInvoices,
     numberOfInvoices,
-    numberOfCustomers,
+    numberOfCustomers
   } = await fetchCardData();
   return (
     <>
-      {/* NOTE: comment in this code when you get to this point in the course */}
+      {/* NOTE: comment in this code when you get to this point in the course -- I am in Chapter 9 */}
 
       <Card title="Collected" value={totalPaidInvoices} type="collected" />
       <Card title="Pending" value={totalPendingInvoices} type="pending" />
@@ -49,7 +49,7 @@ export function Card({
   const Icon = iconMap[type];
 
   return (
-    <div className="rounded-xl bg-slate-100 p-2 shadow-sm">
+    <div className="rounded-xl bg-gray-50 p-2 shadow-sm">
       <div className="flex p-4">
         {Icon ? <Icon className="h-5 w-5 text-gray-700" /> : null}
         <h3 className="ml-2 text-sm font-medium">{title}</h3>
